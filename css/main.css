@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+.sidebar {
+
+    height: 100%;
+    width: 80px; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-color: #45bda9;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    float: left;
+    text-align: center;
+    width: 80px;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.sidebar a:hover {
+    color: #b0e8e6;
+}
+
+.main {
+    height: 100%;
+    padding: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+.main h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 60pt;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px; 
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.row {
+    margin-left: 80px; 
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* :root {
+    --side-padding: 80px;
+}
+
+
+.sidebar {
+
+    height: 100%;
+    width: 80px; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-color: #45bda9;
+
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    float: left;
+    text-align: center;
+    width: var(--side-padding);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.sidebar a:hover {
+    color: #b0e8e6;
+}
+
+.main {
+    height: 100%;
+    margin-left: var(--side-padding);
+    padding: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../images/cornersBG.png");
+    
+}
+
+.main h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 60pt;
+} */
